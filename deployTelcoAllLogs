@@ -1,0 +1,578 @@
+Buildfile: /Users/nnigam/vlocity/vloc_release/build.xml
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/build.properties
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/package_versions.properties
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/namespaces.properties
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/config/config.properties
+     [echo]  Developer Org - vlocity3@salesforce.com
+     [echo]  Description - dev deployment
+     [echo]  Source Dir = src
+
+check-vault-token:
+     [echo] You are not logged in.  Running vault-login task now...
+     [echo] sf.username is vlocity3@salesforce.com
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/package_versions.properties
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/namespaces.properties
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/config/config.properties
+     [echo]  Developer Org - vlocity3@salesforce.com
+     [echo]  Description - dev deployment
+     [echo]  Source Dir = src
+
+vault-login:
+     [echo] Vault not enabled
+
+vault-init:
+     [echo] Initialize vault settings
+     [echo] Vault not enabled
+     [echo] Property File name: ${PROPERTY_FILENAME}
+     [echo] Vault Enabled: ${VAULT_ENABLED}
+
+vault-read:
+     [echo] Vault is not enabled so not going to read secrets
+
+deployTelcoAll:
+     [echo] sf.username is vlocity3@salesforce.com
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/package_versions.properties
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/namespaces.properties
+     [echo] Loading /Users/nnigam/vlocity/vloc_release/config/config.properties
+     [echo]  Developer Org - vlocity3@salesforce.com
+     [echo]  Description - dev deployment
+     [echo]  Source Dir = src
+
+gitRepoInfo:
+     [echo]
+     [echo] ---------------------------
+     [echo]  Git Repo Info
+     [echo] ---------------------------
+[shellscript] 2021-07-22_08:28:43_Thu 353c14fa02104b4cd0569e66d047cd4354df9a2b ../via_calc                            integ-234.0
+[shellscript] 2021-08-03_17:55:29_Tue 86abf88342a7770fe08cc8e3f0a2ea7e9383c882 ../via_cards                           integ-234.0
+[shellscript] 2021-07-22_17:56:37_Thu 42969375996e69bdf8f2dbe621db2737789f9ddc ../via_cards_vertical                  integ-234.0
+[shellscript] 2021-08-04_15:40:01_Wed 5aff16de92768d031ac3b1983787106faf0f8fbd ../via_cmex                            integ-234.0
+[shellscript] 2021-08-03_17:55:29_Tue 79ec3c2fa288854362065ea7bc74ef116ee370f4 ../via_components                      integ-234.0
+[shellscript] 2021-08-03_17:55:29_Tue 7bd5d9cbe6dc3cb23048e4ff641374ab5e259d85 ../via_contract                        integ-234.0
+[shellscript] 2021-08-02_08:02:40_Mon 0594007fc47696858bd4d094927cfe35e1a52f0c ../via_core                            integ-234.0
+[shellscript] 2021-08-05_11:17:29_Thu 636aef89e0e46e2c7d2dfc466dfe2e0ce992fd94 ../via_cpq                             integ-234.0
+[shellscript] 2021-07-22_08:28:44_Thu 3b9d8602aea24726c34bdd4a6f568687f2c9d911 ../via_digital_commerce                integ-234.0
+[shellscript] 2021-08-03_17:55:29_Tue 134c9437c1b36be27c57a2b74ec1c7e658d9e425 ../via_docgen                          integ-234.0
+[shellscript] 2021-07-22_08:28:44_Thu 409a43960feba4966e17e55c67dbedee356b010e ../via_docgen_vertical                 integ-234.0
+[shellscript] 2021-07-22_08:28:44_Thu 58790f2be465edbb7c13c5784d2985f0b47b4cc1 ../via_energy                          integ-234.0
+[shellscript] 2021-07-30_21:09:30_Fri 4d481b4d7ca0fcb18277cf6e7ff26ca4c6c8cbc1 ../via_integ                           integ-234.0
+[shellscript] 2021-08-03_17:55:29_Tue d42e68048df5918dc119b1f2b25d44b23a46f3fa ../via_oui                             integ-234.0
+[shellscript] 2021-07-22_08:28:44_Thu 8db0b5cb73422a639827cd526c59e3198ee985df ../via_oui_verticalpost                integ-234.0
+[shellscript] 2021-08-03_17:55:30_Tue d347a02fb1f98f3ca4150d7f117c825c5bf8a13b ../via_platform                        integ-234.0
+[shellscript] 2021-07-22_08:28:44_Thu 393a21da55a597b370439774ee5f3eaf36708361 ../via_platform_vertical               integ-234.0
+[shellscript] 2021-07-22_08:28:44_Thu f84446ec284004d76514eff3dd32f83afd75358c ../via_resources                       integ-234.0
+[shellscript] 2021-07-22_08:28:44_Thu 9c276d8f77b3e551fc736ab56bd45a824ce94506 ../via_rm                              integ-234.0
+[shellscript] 2021-08-03_08:28:44_Tue eea57b6f949d21790f4029d9381195640bba83f1 ../via_sdk                             integ-234.0
+[shellscript] 2021-08-05_11:17:47_Thu db474bf173f601392247a2fdbabdfde954cfca42 ../via_telco                           integ-234.0
+[shellscript] 2021-08-02_15:04:26_Mon ba297c892e6850d33d4593ac1b12fd2db0ab031a ../via_upc                             integ-234.0
+[shellscript] 2021-08-04_21:20:06_Wed 4b589e7eb6d1040bae4f6dae575dfbcace4a38b4 ../via_xom                             integ-234.0
+[shellscript] 2021-07-06_02:38:13_Tue 56cff185251067c4067e6a20c82e5c39dfd43706 ../via_xom_telco                       integ-234.0
+[shellscript] 2021-08-04_00:23:22_Wed d83266e84dad16e9ce9f89e0645788851cea4ca0 ../vloc_release                             master
+     [echo]
+     [echo]
+     [echo] -------------------------------------------
+     [echo] Deploying Repos
+     [echo] -------------------------------------------
+     [echo] sdk,resources,platform_vertical,platform,components,core,cards,cards_vertical,calc,rm,oui,oui_verticalpost,digital_commerce,cpq,upc,docgen_vertical,docgen,contract,xom,telco,integ,energy,xom_telco,cmex
+     [echo]
+     [echo] -------------------------------------------
+     [echo] Deploying vlocity3@salesforce.com::sdk
+     [echo] -------------------------------------------
+     [echo]
+     [echo] -------------------------------------------
+     [echo] Git Status Info
+     [echo] -------------------------------------------
+     [exec] On branch integ-234.0
+     [exec] Your branch is up to date with 'origin/integ-234.0'.
+     [exec]
+     [exec] nothing to commit, working tree clean
+     [echo]
+     [echo] -------------------------------------------
+     [echo] Make::Pre-check
+     [echo] -------------------------------------------
+     [echo]
+     [echo] -------------------------------------------
+     [echo] Using::Make::/Users/nnigam/vlocity/vloc_release/../via_sdk
+     [echo] -------------------------------------------
+     [echo]
+    [upper] experiment: creating class manager
+[shellscript] NODE_VERSION=14.16.1
+[shellscript] configured nvm
+[shellscript] Found '/Users/nnigam/vlocity/via_sdk/.nvmrc' with version <14.16.1>
+[shellscript] v14.16.1 is already installed.
+[shellscript] Now using node v14.16.1 (npm v7.20.3)
+[shellscript] Yarn Version=1.18.0
+[shellscript] Running 'yarn --silent --pure-lockfile --ignore-optional --production=false --non-interactive --frozen-lockfile install' in /Users/nnigam/vlocity/vloc_release/bin/..
+[shellscript] warning ../package.json: No license field
+[shellscript] warning Resolution field "node-sass@6.0.1" is incompatible with requested version "node-sass@^3.4.0"
+[shellscript] Running: make clean deploy -B forceRequiredRepoOverride=false in /Users/nnigam/vlocity/vloc_release/../via_sdk
+[shellscript] -----------------------------------
+[shellscript]  Vlocity, Inc. © 2018-2020
+[shellscript] -----------------------------------
+[shellscript]       SF_USERNAME = vlocity3@salesforce.com
+[shellscript]         SERVERURL = https://login.salesforce.com
+[shellscript] PKG_MAJOR_VERSION = 234
+[shellscript]      MAKECMDGOALS = clean deploy
+[shellscript]         NAMESPACE = vlocity_cmt
+[shellscript]      CURRENT_MAKE = 4.3
+[shellscript]       CURRENT_DIR = via_sdk
+[shellscript]    CURRENT_BRANCH = integ-234.0
+[shellscript]       API_VERSION = 39.0
+[shellscript]      NODE_VERSION = v14.16.1
+[shellscript]         NODE_PATH = /Users/nnigam/vlocity/via_sdk/node_modules
+[shellscript] -----------------------------------
+[shellscript]
+[shellscript] Installing nvm.sh
+[shellscript] make: Circular /Users/nnigam/.nvm/nvm.sh <- makePreBuildChecks dependency dropped.
+[shellscript] make: Circular node_modules/yarn.pkg.done <- makePreBuildChecks dependency dropped.
+[shellscript] Running nvm use/install
+[shellscript] Found '/Users/nnigam/vlocity/via_sdk/.nvmrc' with version <14.16.1>
+[shellscript] Now using node v14.16.1 (npm v7.20.3)
+[shellscript] Found '/Users/nnigam/vlocity/via_sdk/.nvmrc' with version <14.16.1>
+[shellscript] Now using node v14.16.1 (npm v7.20.3)
+[shellscript] /Users/nnigam/.nvm/versions/node/v14.16.1/bin/yarn
+[shellscript] yarn check v1.18.0
+[shellscript] warning ../package.json: No license field
+[shellscript] error "node-static#optimist#minimist" is wrong version: expected "~0.0.1", got "0.2.1"
+[shellscript] error "typedoc#handlebars#minimist" is wrong version: expected "^1.2.5", got "0.2.1"
+[shellscript] error "ts-loader#loader-utils#json5#minimist" is wrong version: expected "^1.2.0", got "0.2.1"
+[shellscript] error "karma-typescript#karma-coverage#dateformat#meow#minimist" is wrong version: expected "^1.1.3", got "0.2.1"
+[shellscript] info Visit https://yarnpkg.com/en/docs/cli/check for documentation about this command.
+[shellscript] error Found 4 errors.
+[shellscript] Removing node_modules
+[shellscript] Populating node_modules
+[shellscript] warning ../package.json: No license field
+[shellscript] warning " > typedoc@0.20.23" has incorrect peer dependency "typescript@3.9.x || 4.0.x || 4.1.x".
+[shellscript] base-clean completed.
+[shellscript] clean completed
+[shellscript] Compiling Typescript sources
+[shellscript]
+[shellscript] > vlocity-sdks@1.0.0 webpack
+[shellscript] > webpack --config webpack.config.js
+[shellscript]
+[shellscript] clean-webpack-plugin: /Users/nnigam/vlocity/via_sdk/dist has been removed.
+[shellscript] Hash: 399f83fd47efc10bb47c
+[shellscript] Version: webpack 4.25.1
+[shellscript] Time: 16791ms
+[shellscript] Built at: 08/05/2021 9:30:15 PM
+[shellscript]                                                                                         Asset        Size  Chunks             Chunk Names
+[shellscript]                                                        ../types/account/AccountSDKConfig.d.ts   426 bytes          [emitted]
+[shellscript]                                              ../types/account/AccountSDKConfig.proxy.sdk.d.ts   576 bytes          [emitted]
+[shellscript]                                                       ../types/account/account.proxy.sdk.d.ts    2.85 KiB          [emitted]
+[shellscript]                                                             ../types/account/account.sdk.d.ts    9.12 KiB          [emitted]
+[shellscript]                                                         ../types/account/asset/AssetItem.d.ts    2.13 KiB          [emitted]
+[shellscript]                                                    ../types/account/asset/AssetItemGroup.d.ts    1.15 KiB          [emitted]
+[shellscript]                                                            ../types/account/asset/Assets.d.ts   737 bytes          [emitted]
+[shellscript]                                            ../types/account/asset/GetAssetByAccountInput.d.ts    1.63 KiB          [emitted]
+[shellscript]                                                         ../types/account/asset/PriceInfo.d.ts   908 bytes          [emitted]
+[shellscript]                                                     ../types/account/common/AccountInput.d.ts    1.36 KiB          [emitted]
+[shellscript]                                                           ../types/account/common/Action.d.ts   401 bytes          [emitted]
+[shellscript]                                     ../types/account/common/ActionRemoteParams.interface.d.ts    82 bytes          [emitted]
+[shellscript]                                       ../types/account/common/ActionRestParams.interface.d.ts    93 bytes          [emitted]
+[shellscript]                                                      ../types/account/common/UserContext.d.ts   151 bytes          [emitted]
+[shellscript]                                                            ../types/account/common/index.d.ts   183 bytes          [emitted]
+[shellscript]                                                 ../types/account/contracts/GetAssetInput.d.ts    1.26 KiB          [emitted]
+[shellscript]                                              ../types/account/contracts/GetContractInput.d.ts     1.3 KiB          [emitted]
+[shellscript]                                                         ../types/account/contracts/index.d.ts    69 bytes          [emitted]
+[shellscript]                                                               ../types/account/index.sdk.d.ts    11 bytes          [emitted]
+[shellscript]                                                         ../types/account/index.sdk.proxy.d.ts    11 bytes          [emitted]
+[shellscript]                                                    ../types/account/offers/GetOfferInput.d.ts    1.36 KiB          [emitted]
+[shellscript]                                                            ../types/account/offers/index.d.ts    33 bytes          [emitted]
+[shellscript]                                                       ../types/b2bexpress/b2bexpress.sdk.d.ts    37.2 KiB          [emitted]
+[shellscript]                                                  ../types/b2bexpress/b2bexpressSDKConfig.d.ts   529 bytes          [emitted]
+[shellscript]                                           ../types/b2bexpress/cart/AddProductToCartInput.d.ts     2.6 KiB          [emitted]
+[shellscript]                                               ../types/b2bexpress/cart/AttributeCategory.d.ts   739 bytes          [emitted]
+[shellscript]                                                        ../types/b2bexpress/cart/CartItem.d.ts     2.9 KiB          [emitted]
+[shellscript]                                                       ../types/b2bexpress/cart/CartItems.d.ts    3.19 KiB          [emitted]
+[shellscript]                                          ../types/b2bexpress/cart/CreateWorkingCartInput.d.ts  1020 bytes          [emitted]
+[shellscript]                                             ../types/b2bexpress/cart/DeleteCartItemInput.d.ts    1.73 KiB          [emitted]
+[shellscript]                                               ../types/b2bexpress/cart/GetCartItemsInput.d.ts    2.83 KiB          [emitted]
+[shellscript]                                             ../types/b2bexpress/cart/GetCartSummaryInput.d.ts    1.76 KiB          [emitted]
+[shellscript]                                                           ../types/b2bexpress/cart/Price.d.ts   514 bytes          [emitted]
+[shellscript]                                                 ../types/b2bexpress/cart/PriceAdjustment.d.ts   441 bytes          [emitted]
+[shellscript]                                                        ../types/b2bexpress/cart/TimeList.d.ts   441 bytes          [emitted]
+[shellscript]                                         ../types/b2bexpress/cart/UpdateCartLineItemInput.d.ts     2.2 KiB          [emitted]
+[shellscript]                                                           ../types/b2bexpress/cart/index.d.ts   388 bytes          [emitted]
+[shellscript]                                            ../types/b2bexpress/catalogs/GetCatalogsInput.d.ts    2.38 KiB          [emitted]
+[shellscript]                                                       ../types/b2bexpress/catalogs/index.d.ts    36 bytes          [emitted]
+[shellscript]                                                ../types/b2bexpress/clone/CloneItemsInput.d.ts    1.47 KiB          [emitted]
+[shellscript]                                                          ../types/b2bexpress/clone/index.d.ts    35 bytes          [emitted]
+[shellscript]                                                        ../types/b2bexpress/common/Action.d.ts   425 bytes          [emitted]
+[shellscript]                                  ../types/b2bexpress/common/ActionRemoteParams.interface.d.ts    82 bytes          [emitted]
+[shellscript]                                    ../types/b2bexpress/common/ActionRestParams.interface.d.ts    94 bytes          [emitted]
+[shellscript]                                                      ../types/b2bexpress/common/B2BInput.d.ts    2.84 KiB          [emitted]
+[shellscript]                                                   ../types/b2bexpress/common/UserContext.d.ts   375 bytes          [emitted]
+[shellscript]                                                         ../types/b2bexpress/common/index.d.ts   179 bytes          [emitted]
+[shellscript]                                            ../types/b2bexpress/crossActions/CrossActions.d.ts   247 bytes          [emitted]
+[shellscript]                                     ../types/b2bexpress/crossActions/CrossActionsService.d.ts    1.06 KiB          [emitted]
+[shellscript]                                               ../types/b2bexpress/crossActions/ItemAdded.d.ts   111 bytes          [emitted]
+[shellscript]                                             ../types/b2bexpress/crossActions/ItemDeleted.d.ts   530 bytes          [emitted]
+[shellscript]                                             ../types/b2bexpress/crossActions/ItemUpdated.d.ts   113 bytes          [emitted]
+[shellscript]                                                   ../types/b2bexpress/crossActions/index.d.ts   162 bytes          [emitted]
+[shellscript]                                                            ../types/b2bexpress/index.sdk.d.ts    11 bytes          [emitted]
+[shellscript]                                           ../types/b2bexpress/price/ApplyAdjustmentInput.d.ts    1.33 KiB          [emitted]
+[shellscript]                                     ../types/b2bexpress/price/DeletePriceAdjustmentInput.d.ts    1.24 KiB          [emitted]
+[shellscript]                                     ../types/b2bexpress/price/GetCartLineItemPricesInput.d.ts    1.23 KiB          [emitted]
+[shellscript]                                           ../types/b2bexpress/price/GetPriceDetailsInput.d.ts    1.22 KiB          [emitted]
+[shellscript]                                              ../types/b2bexpress/price/GetTimeListsInput.d.ts    1.09 KiB          [emitted]
+[shellscript]                                                          ../types/b2bexpress/price/index.d.ts   209 bytes          [emitted]
+[shellscript]                                        ../types/b2bexpress/products/GetCartProductsInput.d.ts    2.51 KiB          [emitted]
+[shellscript]                                                       ../types/b2bexpress/products/index.d.ts    40 bytes          [emitted]
+[shellscript]                                                                  ../types/common/BaseSDK.d.ts    2.58 KiB          [emitted]
+[shellscript]                                                      ../types/common/DataSourceBrowserDB.d.ts    4.63 KiB          [emitted]
+[shellscript]                                                               ../types/common/HttpMethod.d.ts   221 bytes          [emitted]
+[shellscript]                                                                ../types/common/SDKConfig.d.ts   259 bytes          [emitted]
+[shellscript]                                                      ../types/common/SalesForceNamespace.d.ts    1.73 KiB          [emitted]
+[shellscript]                                                                ../types/common/cacheType.d.ts   136 bytes          [emitted]
+[shellscript]                                                                    ../types/common/index.d.ts   154 bytes          [emitted]
+[shellscript]                                                                ../types/cpq/CPQSDKConfig.d.ts   981 bytes          [emitted]
+[shellscript]                                  ../types/cpq/cart/AddProductToCart/AddProductToCartImpl.d.ts   535 bytes          [emitted]
+[shellscript]                                 ../types/cpq/cart/AddProductToCart/AddProductToCartInput.d.ts    2.51 KiB          [emitted]
+[shellscript]                                 ../types/cpq/cart/AddPromotionToCart/AddToCartPromoInput.d.ts    1.46 KiB          [emitted]
+[shellscript]                                                     ../types/cpq/cart/AddToCartItemInput.d.ts   266 bytes          [emitted]
+[shellscript]                                    ../types/cpq/cart/ApplyAdjustment/ApplyAdjustmentImpl.d.ts   490 bytes          [emitted]
+[shellscript]                                   ../types/cpq/cart/ApplyAdjustment/ApplyAdjustmentInput.d.ts    1.34 KiB          [emitted]
+[shellscript]                                        ../types/cpq/cart/ApplyDiscount/ApplyDiscountImpl.d.ts   492 bytes          [emitted]
+[shellscript]                                       ../types/cpq/cart/ApplyDiscount/ApplyDiscountInput.d.ts    1.26 KiB          [emitted]
+[shellscript]                                    ../types/cpq/cart/CloneItemInCart/CloneItemInCartImpl.d.ts   540 bytes          [emitted]
+[shellscript]                                   ../types/cpq/cart/CloneItemInCart/CloneItemInCartInput.d.ts    1.56 KiB          [emitted]
+[shellscript]                                                        ../types/cpq/cart/CloneItemsInput.d.ts    1.36 KiB          [emitted]
+[shellscript]                                                   ../types/cpq/cart/ConfigureAndAddInput.d.ts   993 bytes          [emitted]
+[shellscript]                                                        ../types/cpq/cart/CreateCartInput.d.ts    1.73 KiB          [emitted]
+[shellscript]                                                 ../types/cpq/cart/CreateWorkingCartInput.d.ts    1.01 KiB          [emitted]
+[shellscript]                                                    ../types/cpq/cart/DeleteCartItemInput.d.ts   476 bytes          [emitted]
+[shellscript]                                      ../types/cpq/cart/DeleteDiscount/DeleteDiscountImpl.d.ts   481 bytes          [emitted]
+[shellscript]                                     ../types/cpq/cart/DeleteDiscount/DeleteDiscountInput.d.ts    1.24 KiB          [emitted]
+[shellscript]                              ../types/cpq/cart/DeleteItemFromCart/DeleteItemFromCartImpl.d.ts   514 bytes          [emitted]
+[shellscript]                             ../types/cpq/cart/DeleteItemFromCart/DeleteItemFromCartInput.d.ts    2.04 KiB          [emitted]
+[shellscript]                        ../types/cpq/cart/DeletePriceAdjustment/DeletePriceAdjustmentImpl.d.ts   538 bytes          [emitted]
+[shellscript]                       ../types/cpq/cart/DeletePriceAdjustment/DeletePriceAdjustmentInput.d.ts    1.74 KiB          [emitted]
+[shellscript]                                    ../types/cpq/cart/DeletePromotion/DeletePromotionImpl.d.ts   489 bytes          [emitted]
+[shellscript]                                   ../types/cpq/cart/DeletePromotion/DeletePromotionInput.d.ts    1.52 KiB          [emitted]
+[shellscript]                                ../types/cpq/cart/GetAsyncJobStatus/GetAsyncJobStatusImpl.d.ts   514 bytes          [emitted]
+[shellscript]                               ../types/cpq/cart/GetAsyncJobStatus/GetAsyncJobStatusInput.d.ts     1.6 KiB          [emitted]
+[shellscript]                                          ../types/cpq/cart/GetCartItems/GetCartItemsImpl.d.ts   476 bytes          [emitted]
+[shellscript]                                         ../types/cpq/cart/GetCartItems/GetCartItemsInput.d.ts    2.34 KiB          [emitted]
+[shellscript]                        ../types/cpq/cart/GetCartLineItemPrices/GetCartLineItemPricesImpl.d.ts   554 bytes          [emitted]
+[shellscript]                       ../types/cpq/cart/GetCartLineItemPrices/GetCartLineItemPricesInput.d.ts    1.66 KiB          [emitted]
+[shellscript]                                      ../types/cpq/cart/GetCartSummary/GetCartSummaryImpl.d.ts   490 bytes          [emitted]
+[shellscript]                                     ../types/cpq/cart/GetCartSummary/GetCartSummaryInput.d.ts     2.4 KiB          [emitted]
+[shellscript]                                  ../types/cpq/cart/GetListsOfValues/GetListsOfValuesImpl.d.ts   498 bytes          [emitted]
+[shellscript]                                 ../types/cpq/cart/GetListsOfValues/GetListsOfValuesInput.d.ts    1.66 KiB          [emitted]
+[shellscript]                                    ../types/cpq/cart/GetPriceDetails/GetPriceDetailsImpl.d.ts   498 bytes          [emitted]
+[shellscript]                                   ../types/cpq/cart/GetPriceDetails/GetPriceDetailsInput.d.ts    1.74 KiB          [emitted]
+[shellscript]                                                      ../types/cpq/cart/GetTimeListsInput.d.ts    1.08 KiB          [emitted]
+[shellscript]                                      ../types/cpq/cart/UpdateCartItem/UpdateCartItemImpl.d.ts   519 bytes          [emitted]
+[shellscript]                                     ../types/cpq/cart/UpdateCartItem/UpdateCartItemInput.d.ts    1.63 KiB          [emitted]
+[shellscript]                          ../types/cpq/cart/UpdateItemAttributes/UpdateItemAttributesImpl.d.ts   577 bytes          [emitted]
+[shellscript]                         ../types/cpq/cart/UpdateItemAttributes/UpdateItemAttributesInput.d.ts    1.66 KiB          [emitted]
+[shellscript]                                                                  ../types/cpq/cart/index.d.ts    1.28 KiB          [emitted]
+[shellscript]                                                             ../types/cpq/catalog/Catalog.d.ts   212 bytes          [emitted]
+[shellscript]                                                    ../types/cpq/catalog/GetCatalogsInput.d.ts    3.26 KiB          [emitted]
+[shellscript]                                         ../types/cpq/catalog/GetProductsFromCatalogInput.d.ts   669 bytes          [emitted]
+[shellscript]                                                    ../types/cpq/catalog/GetProductsInput.d.ts     4.5 KiB          [emitted]
+[shellscript]                                                  ../types/cpq/catalog/GetPromotionsInput.d.ts    2.88 KiB          [emitted]
+[shellscript]                                                             ../types/cpq/catalog/Product.d.ts   281 bytes          [emitted]
+[shellscript]                                                               ../types/cpq/catalog/index.d.ts   211 bytes          [emitted]
+[shellscript]                                                               ../types/cpq/common/Action.d.ts   425 bytes          [emitted]
+[shellscript]                                         ../types/cpq/common/ActionRemoteParams.interface.d.ts   111 bytes          [emitted]
+[shellscript]                                           ../types/cpq/common/ActionRestParams.interface.d.ts   151 bytes          [emitted]
+[shellscript]                                                           ../types/cpq/common/Attachment.d.ts   231 bytes          [emitted]
+[shellscript]                                                          ../types/cpq/common/CpqSDKInput.d.ts    3.38 KiB          [emitted]
+[shellscript]                                          ../types/cpq/common/InvokeActionInput.interface.d.ts   234 bytes          [emitted]
+[shellscript]                                                          ../types/cpq/common/UserContext.d.ts   171 bytes          [emitted]
+[shellscript]                                                                ../types/cpq/common/index.d.ts   228 bytes          [emitted]
+[shellscript]                                                                     ../types/cpq/cpq.sdk.d.ts    33.1 KiB          [emitted]
+[shellscript]                                           ../types/cpq/discount/ApplyDiscountToCartInput.d.ts     1.2 KiB          [emitted]
+[shellscript]                                                              ../types/cpq/discount/index.d.ts    44 bytes          [emitted]
+[shellscript]                                                                   ../types/cpq/index.sdk.d.ts    11 bytes          [emitted]
+[shellscript]                                                 ../types/datasource/DataSource.interface.d.ts   143 bytes          [emitted]
+[shellscript]                                                  ../types/datasource/DataSourceSDKConfig.d.ts   712 bytes          [emitted]
+[shellscript]                                                        ../types/datasource/ResponseError.d.ts   478 bytes          [emitted]
+[shellscript]                                                ../types/datasource/apexremote/ApexRemote.d.ts   591 bytes          [emitted]
+[shellscript]                                           ../types/datasource/apexremote/ApexRemoteInput.d.ts    2.01 KiB          [emitted]
+[shellscript]                                                     ../types/datasource/apexremote/index.d.ts    65 bytes          [emitted]
+[shellscript]                                                    ../types/datasource/apexrest/ApexRest.d.ts   709 bytes          [emitted]
+[shellscript]                                               ../types/datasource/apexrest/ApexRestInput.d.ts  1010 bytes          [emitted]
+[shellscript]                                                       ../types/datasource/apexrest/index.d.ts    61 bytes          [emitted]
+[shellscript]                                           ../types/datasource/common/BaseDataSourceInput.d.ts    1.91 KiB          [emitted]
+[shellscript]                                                   ../types/datasource/common/CacheResult.d.ts    84 bytes          [emitted]
+[shellscript]                                                         ../types/datasource/common/index.d.ts    39 bytes          [emitted]
+[shellscript]                                                ../types/datasource/dataraptor/DataRaptor.d.ts   857 bytes          [emitted]
+[shellscript]                                           ../types/datasource/dataraptor/DataRaptorInput.d.ts   487 bytes          [emitted]
+[shellscript]                                                     ../types/datasource/dataraptor/index.d.ts    65 bytes          [emitted]
+[shellscript]                                                       ../types/datasource/datasource.sdk.d.ts    16.2 KiB          [emitted]
+[shellscript]                                                            ../types/datasource/dual/Dual.d.ts   706 bytes          [emitted]
+[shellscript]                                                           ../types/datasource/dual/index.d.ts    24 bytes          [emitted]
+[shellscript]                                                            ../types/datasource/index.sdk.d.ts    11 bytes          [emitted]
+[shellscript]                            ../types/datasource/integrationprocedure/IntegrationProcedure.d.ts   734 bytes          [emitted]
+[shellscript]                       ../types/datasource/integrationprocedure/IntegrationProcedureInput.d.ts   552 bytes          [emitted]
+[shellscript]                                           ../types/datasource/integrationprocedure/index.d.ts    85 bytes          [emitted]
+[shellscript]                                                 ../types/datasource/request/VlocityInput.d.ts   970 bytes          [emitted]
+[shellscript]                                             ../types/datasource/response/BulkCreateError.d.ts   376 bytes          [emitted]
+[shellscript]                                            ../types/datasource/response/BulkCreateResult.d.ts   493 bytes          [emitted]
+[shellscript]                                                      ../types/datasource/response/Result.d.ts   223 bytes          [emitted]
+[shellscript]                                                            ../types/datasource/rest/Rest.d.ts   536 bytes          [emitted]
+[shellscript]                                                       ../types/datasource/rest/RestInput.d.ts   216 bytes          [emitted]
+[shellscript]                                                           ../types/datasource/rest/index.d.ts    24 bytes          [emitted]
+[shellscript]                                                            ../types/datasource/soql/Soql.d.ts   651 bytes          [emitted]
+[shellscript]                                                       ../types/datasource/soql/SoqlInput.d.ts   592 bytes          [emitted]
+[shellscript]                                                           ../types/datasource/soql/index.d.ts    53 bytes          [emitted]
+[shellscript]                                                            ../types/datasource/sosl/Sosl.d.ts    1.23 KiB          [emitted]
+[shellscript]                                                       ../types/datasource/sosl/SoslInput.d.ts   592 bytes          [emitted]
+[shellscript]                                                           ../types/datasource/sosl/index.d.ts    53 bytes          [emitted]
+[shellscript]                                                          ../types/datasource/utils/delay.d.ts   350 bytes          [emitted]
+[shellscript]                                                         ../types/datasource/utils/isNode.d.ts    34 bytes          [emitted]
+[shellscript]                                        ../types/digitalcommerce/DigitalCommerceSDKConfig.d.ts   821 bytes          [emitted]
+[shellscript]                                             ../types/digitalcommerce/cart/AddToCartInput.d.ts    3.61 KiB          [emitted]
+[shellscript]                                         ../types/digitalcommerce/cart/AssetToBasketInput.d.ts    3.41 KiB          [emitted]
+[shellscript]                                                       ../types/digitalcommerce/cart/Cart.d.ts    1.17 KiB          [emitted]
+[shellscript]                                                   ../types/digitalcommerce/cart/CartItem.d.ts    2.89 KiB          [emitted]
+[shellscript]                                              ../types/digitalcommerce/cart/CartItemGroup.d.ts     2.5 KiB          [emitted]
+[shellscript]                                          ../types/digitalcommerce/cart/CheckoutCartInput.d.ts    2.98 KiB          [emitted]
+[shellscript]                                        ../types/digitalcommerce/cart/GetItemsInCartInput.d.ts    1.97 KiB          [emitted]
+[shellscript]                                                  ../types/digitalcommerce/cart/PriceInfo.d.ts   908 bytes          [emitted]
+[shellscript]                                     ../types/digitalcommerce/cart/UpdateItemsInCartInput.d.ts     3.3 KiB          [emitted]
+[shellscript]                                                      ../types/digitalcommerce/cart/index.d.ts   304 bytes          [emitted]
+[shellscript]                                  ../types/digitalcommerce/checkout/AuthenticateUserInput.d.ts    2.16 KiB          [emitted]
+[shellscript]                                          ../types/digitalcommerce/checkout/SaveCartInput.d.ts    1.88 KiB          [emitted]
+[shellscript]                                       ../types/digitalcommerce/checkout/SignOutUserInput.d.ts    1.64 KiB          [emitted]
+[shellscript]                                       ../types/digitalcommerce/checkout/SubmitOrderInput.d.ts       2 KiB          [emitted]
+[shellscript]                              ../types/digitalcommerce/checkout/UpdateBillingDetailsInput.d.ts    2.71 KiB          [emitted]
+[shellscript]                                                  ../types/digitalcommerce/checkout/index.d.ts   155 bytes          [emitted]
+[shellscript]                                                   ../types/digitalcommerce/common/Action.d.ts   401 bytes          [emitted]
+[shellscript]                             ../types/digitalcommerce/common/ActionRemoteParams.interface.d.ts    82 bytes          [emitted]
+[shellscript]                               ../types/digitalcommerce/common/ActionRestParams.interface.d.ts    93 bytes          [emitted]
+[shellscript]                                     ../types/digitalcommerce/common/DigitalCommerceInput.d.ts    3.88 KiB          [emitted]
+[shellscript]                                         ../types/digitalcommerce/common/GetAWSTokenInput.d.ts    1.37 KiB          [emitted]
+[shellscript]                                              ../types/digitalcommerce/common/UserContext.d.ts   375 bytes          [emitted]
+[shellscript]                                                    ../types/digitalcommerce/common/index.d.ts   191 bytes          [emitted]
+[shellscript]                                       ../types/digitalcommerce/digitalcommerce.proxy.sdk.d.ts    14.4 KiB          [emitted]
+[shellscript]                                             ../types/digitalcommerce/digitalcommerce.sdk.d.ts    47.8 KiB          [emitted]
+[shellscript]                              ../types/digitalcommerce/digitalcommerceSDKConfig.proxy.sdk.d.ts   581 bytes          [emitted]
+[shellscript]                                                       ../types/digitalcommerce/index.sdk.d.ts    11 bytes          [emitted]
+[shellscript]                                                 ../types/digitalcommerce/index.sdk.proxy.d.ts    11 bytes          [emitted]
+[shellscript]                                            ../types/digitalcommerce/offers/GetOfferInput.d.ts    3.15 KiB          [emitted]
+[shellscript]                                           ../types/digitalcommerce/offers/GetOffersInput.d.ts    3.32 KiB          [emitted]
+[shellscript]                                                    ../types/digitalcommerce/offers/Offer.d.ts    2.95 KiB          [emitted]
+[shellscript]                                                ../types/digitalcommerce/offers/OfferList.d.ts   771 bytes          [emitted]
+[shellscript]                                                ../types/digitalcommerce/offers/PriceInfo.d.ts   697 bytes          [emitted]
+[shellscript]                                             ../types/digitalcommerce/offers/ProductGroup.d.ts    1.24 KiB          [emitted]
+[shellscript]                                                ../types/digitalcommerce/offers/Promotion.d.ts   726 bytes          [emitted]
+[shellscript]                                            ../types/digitalcommerce/offers/PromotionList.d.ts    1.08 KiB          [emitted]
+[shellscript]                                       ../types/digitalcommerce/offers/ValidateOfferInput.d.ts    2.18 KiB          [emitted]
+[shellscript]                                                    ../types/digitalcommerce/offers/index.d.ts   220 bytes          [emitted]
+[shellscript]                                                                ../types/events/index.sdk.d.ts    11 bytes          [emitted]
+[shellscript]                                                               ../types/events/pubsub.sdk.d.ts    1.83 KiB          [emitted]
+[shellscript]                                                                    ../types/logger/index.d.ts    26 bytes          [emitted]
+[shellscript]                                                                   ../types/logger/logger.d.ts   878 bytes          [emitted]
+[shellscript]                                          ../types/productconsole/ProductConsoleSDKConfig.d.ts   254 bytes          [emitted]
+[shellscript]                                                 ../types/productconsole/common/Attribute.d.ts   674 bytes          [emitted]
+[shellscript]                                            ../types/productconsole/common/AttributeValue.d.ts   247 bytes          [emitted]
+[shellscript]                                             ../types/productconsole/common/AvailableItem.d.ts   491 bytes          [emitted]
+[shellscript]                                                     ../types/productconsole/common/Field.d.ts   313 bytes          [emitted]
+[shellscript]                                 ../types/productconsole/common/GetObjectDescriptionInput.d.ts   166 bytes          [emitted]
+[shellscript]                                   ../types/productconsole/common/GetObjectPicklistsInput.d.ts   212 bytes          [emitted]
+[shellscript]                                 ../types/productconsole/common/SearchRelatedObjectsInput.d.ts    1.04 KiB          [emitted]
+[shellscript]                                               ../types/productconsole/common/SearchUtils.d.ts    99 bytes          [emitted]
+[shellscript]                                                     ../types/productconsole/common/index.d.ts   254 bytes          [emitted]
+[shellscript]                                                        ../types/productconsole/index.sdk.d.ts    11 bytes          [emitted]
+[shellscript]                                            ../types/productconsole/offers/GetOffersInput.d.ts   948 bytes          [emitted]
+[shellscript]                                                     ../types/productconsole/offers/index.d.ts    34 bytes          [emitted]
+[shellscript]                                ../types/productconsole/pricelists/AddContextRuleSetInput.d.ts    1.17 KiB          [emitted]
+[shellscript]                                     ../types/productconsole/pricelists/ContextRuleObject.d.ts   307 bytes          [emitted]
+[shellscript]                                ../types/productconsole/pricelists/DeleteContextRuleInput.d.ts   589 bytes          [emitted]
+[shellscript]                             ../types/productconsole/pricelists/DeletePriceListEntryInput.d.ts   543 bytes          [emitted]
+[shellscript]                              ../types/productconsole/pricelists/EditPriceListEntryObject.d.ts   913 bytes          [emitted]
+[shellscript]                ../types/productconsole/pricelists/EditPromotionOfferPriceListEntryObject.d.ts    1.49 KiB          [emitted]
+[shellscript]                           ../types/productconsole/pricelists/GetApplicablePriceListInput.d.ts   983 bytes          [emitted]
+[shellscript]                       ../types/productconsole/pricelists/GetAppliedPriceListEntriesInput.d.ts   629 bytes          [emitted]
+[shellscript]                            ../types/productconsole/pricelists/GetEditPriceListEntryInput.d.ts    1.92 KiB          [emitted]
+[shellscript]              ../types/productconsole/pricelists/GetEditPromotionOfferPriceListEntryInput.d.ts    2.01 KiB          [emitted]
+[shellscript]                       ../types/productconsole/pricelists/GetPriceListCurrencyValuesInput.d.ts   582 bytes          [emitted]
+[shellscript]                      ../types/productconsole/pricelists/GetPriceListCurrencyValuesObject.d.ts   233 bytes          [emitted]
+[shellscript]                                ../types/productconsole/pricelists/GetPriceListEntryInput.d.ts    1.49 KiB          [emitted]
+[shellscript]                                     ../types/productconsole/pricelists/GetPriceListInput.d.ts   308 bytes          [emitted]
+[shellscript]                                ../types/productconsole/pricelists/GetPricingElementInput.d.ts    1.09 KiB          [emitted]
+[shellscript]                               ../types/productconsole/pricelists/GetPricingPickListInput.d.ts   430 bytes          [emitted]
+[shellscript]                               ../types/productconsole/pricelists/GetPricingVariableInput.d.ts    1.32 KiB          [emitted]
+[shellscript]                  ../types/productconsole/pricelists/GetPromotionOfferPriceListEntryInput.d.ts    1.96 KiB          [emitted]
+[shellscript]                             ../types/productconsole/pricelists/GetTimePlanPolicyIdsInput.d.ts    1.27 KiB          [emitted]
+[shellscript]                                ../types/productconsole/pricelists/GetTimePlanPolicyInput.d.ts       1 KiB          [emitted]
+[shellscript]                                  ../types/productconsole/pricelists/PriceListEntryObject.d.ts   913 bytes          [emitted]
+[shellscript]                    ../types/productconsole/pricelists/PromotionOfferPriceListEntryObject.d.ts    1.57 KiB          [emitted]
+[shellscript]                                  ../types/productconsole/pricelists/TimePlanPolicyObject.d.ts   214 bytes          [emitted]
+[shellscript]                                                 ../types/productconsole/pricelists/index.d.ts    1.03 KiB          [emitted]
+[shellscript]                                       ../types/productconsole/pricing/productpricing.sdk.d.ts    15.9 KiB          [emitted]
+[shellscript]                                               ../types/productconsole/productconsole.sdk.d.ts    19.3 KiB          [emitted]
+[shellscript]                             ../types/productconsole/productoverrides/CreateOverrideInput.d.ts    1.25 KiB          [emitted]
+[shellscript]                             ../types/productconsole/productoverrides/DeleteOverrideInput.d.ts   735 bytes          [emitted]
+[shellscript]                   ../types/productconsole/productoverrides/GetAttributeOverrideListInput.d.ts    1.03 KiB          [emitted]
+[shellscript]                                ../types/productconsole/productoverrides/GetOverrideInput.d.ts    1.03 KiB          [emitted]
+[shellscript]                             ../types/productconsole/productoverrides/GetSpecDetailsInput.d.ts   480 bytes          [emitted]
+[shellscript]                               ../types/productconsole/productoverrides/SaveOverrideInput.d.ts   840 bytes          [emitted]
+[shellscript]                    ../types/productconsole/productoverrides/ValidateAndSaveOverrideInput.d.ts   836 bytes          [emitted]
+[shellscript]                                           ../types/productconsole/productoverrides/index.d.ts   287 bytes          [emitted]
+[shellscript]                             ../types/productconsole/productoverrides/productoverride.sdk.d.ts    12.1 KiB          [emitted]
+[shellscript]                      ../types/productconsole/products/GetAppliedFieldsAndAttributesInput.d.ts   224 bytes          [emitted]
+[shellscript]                                  ../types/productconsole/products/GetProduct2ObjectInput.d.ts   295 bytes          [emitted]
+[shellscript]                     ../types/productconsole/products/GetProductAttributeAssignmentsInput.d.ts   223 bytes          [emitted]
+[shellscript]                                     ../types/productconsole/products/GetProductDataInput.d.ts   209 bytes          [emitted]
+[shellscript]                               ../types/productconsole/products/GetProductDefinitionInput.d.ts   477 bytes          [emitted]
+[shellscript]                                  ../types/productconsole/products/GetProductDetailsInput.d.ts   910 bytes          [emitted]
+[shellscript]                             ../types/productconsole/products/GetProductDetailsInput.spec.d.ts    11 bytes          [emitted]
+[shellscript]                                        ../types/productconsole/products/GetProductsInput.d.ts   371 bytes          [emitted]
+[shellscript]                            ../types/productconsole/products/NewAttributeAssignmentsInput.d.ts   238 bytes          [emitted]
+[shellscript]                                                 ../types/productconsole/products/Product.d.ts   233 bytes          [emitted]
+[shellscript]                                     ../types/productconsole/products/PublishProductInput.d.ts   207 bytes          [emitted]
+[shellscript]                            ../types/productconsole/products/SaveAttributeAssignmentInput.d.ts   223 bytes          [emitted]
+[shellscript]                                ../types/productconsole/products/SimpleProductSearchInput.d.ts   117 bytes          [emitted]
+[shellscript]                         ../types/productconsole/products/UpdateAttributeAssignmentsInput.d.ts   227 bytes          [emitted]
+[shellscript]                                       ../types/productconsole/products/UpdateObjectInput.d.ts   228 bytes          [emitted]
+[shellscript]                             ../types/productconsole/products/UpdateProductAttributeInput.d.ts   536 bytes          [emitted]
+[shellscript]                            ../types/productconsole/products/UpdateProductDefinitionInput.d.ts   589 bytes          [emitted]
+[shellscript]                                 ../types/productconsole/products/UpdateProductFieldInput.d.ts   274 bytes          [emitted]
+[shellscript]                              ../types/productconsole/products/UpdateSingleAttributeInput.d.ts   340 bytes          [emitted]
+[shellscript]                                                   ../types/productconsole/products/index.d.ts   790 bytes          [emitted]
+[shellscript]                         ../types/productconsole/productstructure/CreateChildProductInput.d.ts   831 bytes          [emitted]
+[shellscript]                         ../types/productconsole/productstructure/GetRelatedProductsInput.d.ts   614 bytes          [emitted]
+[shellscript]                            ../types/productconsole/productstructure/ParentChildItemInput.d.ts   969 bytes          [emitted]
+[shellscript]                                           ../types/productconsole/productstructure/index.d.ts   126 bytes          [emitted]
+[shellscript]                            ../types/productconsole/productstructure/productstructure.sdk.d.ts    9.89 KiB          [emitted]
+[shellscript]                                  ../types/productconsole/promotions/CreatePromotionInput.d.ts    1.27 KiB          [emitted]
+[shellscript]                              ../types/productconsole/promotions/CreatePromotionItemInput.d.ts    2.35 KiB          [emitted]
+[shellscript]                             ../types/productconsole/promotions/GetAppliedPromotionsInput.d.ts   694 bytes          [emitted]
+[shellscript]                            ../types/productconsole/promotions/GetExistingPromotionsInput.d.ts   960 bytes          [emitted]
+[shellscript]                                ../types/productconsole/promotions/NewPromotionItemObject.d.ts    2.29 KiB          [emitted]
+[shellscript]                                    ../types/productconsole/promotions/NewPromotionObject.d.ts   431 bytes          [emitted]
+[shellscript]                                                 ../types/productconsole/promotions/index.d.ts   255 bytes          [emitted]
+[shellscript]                                   ../types/productconsole/quickadd/GetQuickAddItemsInput.d.ts    47 bytes          [emitted]
+[shellscript]                       ../types/productconsole/quickadd/GetQuickAddPricingPropertiesInput.d.ts   825 bytes          [emitted]
+[shellscript]                       ../types/productconsole/quickadd/GetQuickAddProductPropertiesInput.d.ts   616 bytes          [emitted]
+[shellscript]                  ../types/productconsole/quickadd/QuickAddProductPropertiesFilterOptions.d.ts   295 bytes          [emitted]
+[shellscript]                                                   ../types/productconsole/quickadd/index.d.ts   205 bytes          [emitted]
+[shellscript]                                               ../types/productconsole/test/fixtures/user.d.ts   225 bytes          [emitted]
+[shellscript]                                               ../types/productconsole/versioning/Version.d.ts   610 bytes          [emitted]
+[shellscript]                                        ../types/productconsole/versioning/versioning.sdk.d.ts    1.52 KiB          [emitted]
+[shellscript]                ../types/productconsole/vlocity-attachments/CreateSalesforceDocumentInput.d.ts   668 bytes          [emitted]
+[shellscript]                ../types/productconsole/vlocity-attachments/CreateVlocityAttachmentsInput.d.ts   992 bytes          [emitted]
+[shellscript]                 ../types/productconsole/vlocity-attachments/DeleteVlocityAttachmentInput.d.ts   299 bytes          [emitted]
+[shellscript]             ../types/productconsole/vlocity-attachments/GetVlocityAttachmentDetailsInput.d.ts   511 bytes          [emitted]
+[shellscript]                   ../types/productconsole/vlocity-attachments/GetVlocityAttachmentsInput.d.ts   963 bytes          [emitted]
+[shellscript]                                        ../types/productconsole/vlocity-attachments/index.d.ts   244 bytes          [emitted]
+[shellscript]                             ../types/productconsole/vlocity-object-details/ObjectSection.d.ts   790 bytes          [emitted]
+[shellscript]                      ../types/productconsole/vlocity-object-details/ObjectSectionElement.d.ts    3.09 KiB          [emitted]
+[shellscript]                               ../types/productconsole/vlocity-object-details/ObjectUtils.d.ts   639 bytes          [emitted]
+[shellscript]                                  ../types/productconsole/vlocity-object-details/testData.d.ts    37.9 KiB          [emitted]
+[shellscript]                    ../types/productconsole/vlocity-object-details/vlocity-object-details.d.ts    5.04 KiB          [emitted]
+[shellscript] ../types/productconsole/vlocityattributes/applicableobjects/UpdateApplicableObjectsInput.d.ts   688 bytes          [emitted]
+[shellscript]                                          ../types/productconsole/vlocityattributes/index.d.ts    66 bytes          [emitted]
+[shellscript]                          ../types/productconsole/vlocityattributes/vlocityattributes.sdk.d.ts    4.58 KiB          [emitted]
+[shellscript]                        ../types/productconsole/vlocityobject/facets/GetFacetDetailsInput.d.ts   489 bytes          [emitted]
+[shellscript]                                              ../types/productconsole/vlocityobject/index.d.ts   155 bytes          [emitted]
+[shellscript]          ../types/productconsole/vlocityobject/sectionelements/UpsertSectionElementInput.d.ts   892 bytes          [emitted]
+[shellscript]                        ../types/productconsole/vlocityobject/sections/UpsertSectionInput.d.ts   584 bytes          [emitted]
+[shellscript]                                  ../types/productconsole/vlocityobject/vlocityobject.sdk.d.ts    17.6 KiB          [emitted]
+[shellscript]                                                ../types/translation/TranslationSDKConfig.d.ts  1010 bytes          [emitted]
+[shellscript]                                      ../types/translation/TranslationSDKConfig.proxy.sdk.d.ts   805 bytes          [emitted]
+[shellscript]                                       ../types/translation/common/FetchTranslationsInput.d.ts   999 bytes          [emitted]
+[shellscript]                                            ../types/translation/common/TranslationString.d.ts    79 bytes          [emitted]
+[shellscript]                                                        ../types/translation/common/index.d.ts    79 bytes          [emitted]
+[shellscript]                                                           ../types/translation/index.sdk.d.ts    11 bytes          [emitted]
+[shellscript]                                                     ../types/translation/index.sdk.proxy.d.ts    11 bytes          [emitted]
+[shellscript]                                               ../types/translation/translation.proxy.sdk.d.ts    2.06 KiB          [emitted]
+[shellscript]                                                     ../types/translation/translation.sdk.d.ts    3.53 KiB          [emitted]
+[shellscript]                                                               ../types/utils/common.util.d.ts   640 bytes          [emitted]
+[shellscript]                                                                     ../types/utils/index.d.ts    93 bytes          [emitted]
+[shellscript]                                                        ../types/utils/objectcompare.util.d.ts   221 bytes          [emitted]
+[shellscript]                                                            ../types/utils/objectmap.util.d.ts   445 bytes          [emitted]
+[shellscript]                                                                  ../types/utils/url.util.d.ts   425 bytes          [emitted]
+[shellscript]                                                                        account/account.sdk.js     177 KiB       0  [emitted]  account
+[shellscript]                                                                    account/account.sdk.js.map     711 KiB       0  [emitted]  account
+[shellscript]                                                            account/proxy/account/proxy.sdk.js    23.9 KiB       1  [emitted]  account/proxy
+[shellscript]                                                        account/proxy/account/proxy.sdk.js.map    92.2 KiB       1  [emitted]  account/proxy
+[shellscript]                                                                  b2bexpress/b2bexpress.sdk.js     214 KiB       2  [emitted]  b2bexpress
+[shellscript]                                                              b2bexpress/b2bexpress.sdk.js.map     882 KiB       2  [emitted]  b2bexpress
+[shellscript]                                                                                cpq/cpq.sdk.js     211 KiB       3  [emitted]  cpq
+[shellscript]                                                                            cpq/cpq.sdk.js.map     846 KiB       3  [emitted]  cpq
+[shellscript]                                                                  datasource/datasource.sdk.js     162 KiB       4  [emitted]  datasource
+[shellscript]                                                              datasource/datasource.sdk.js.map     644 KiB       4  [emitted]  datasource
+[shellscript]                                                        digitalcommerce/digitalcommerce.sdk.js     232 KiB       5  [emitted]  digitalcommerce
+[shellscript]                                                    digitalcommerce/digitalcommerce.sdk.js.map     941 KiB       5  [emitted]  digitalcommerce
+[shellscript]                                            digitalcommerce/proxy/digitalcommerce/proxy.sdk.js     196 KiB       6  [emitted]  digitalcommerce/proxy
+[shellscript]                                        digitalcommerce/proxy/digitalcommerce/proxy.sdk.js.map     776 KiB       6  [emitted]  digitalcommerce/proxy
+[shellscript]                                                          productconsole/productconsole.sdk.js     242 KiB       7  [emitted]  productconsole
+[shellscript]                                                      productconsole/productconsole.sdk.js.map     929 KiB       7  [emitted]  productconsole
+[shellscript]                                                                          pubsub/pubsub.sdk.js    15.3 KiB       8  [emitted]  pubsub
+[shellscript]                                                                      pubsub/pubsub.sdk.js.map      60 KiB       8  [emitted]  pubsub
+[shellscript]                                                    translation/proxy/translation/proxy.sdk.js    19.3 KiB      10  [emitted]  translation/proxy
+[shellscript]                                                translation/proxy/translation/proxy.sdk.js.map    72.2 KiB      10  [emitted]  translation/proxy
+[shellscript]                                                                translation/translation.sdk.js     140 KiB       9  [emitted]  translation
+[shellscript]                                                            translation/translation.sdk.js.map     574 KiB       9  [emitted]  translation
+[shellscript] Entrypoint datasource = datasource/datasource.sdk.js datasource/datasource.sdk.js.map
+[shellscript] Entrypoint cpq = cpq/cpq.sdk.js cpq/cpq.sdk.js.map
+[shellscript] Entrypoint digitalcommerce = digitalcommerce/digitalcommerce.sdk.js digitalcommerce/digitalcommerce.sdk.js.map
+[shellscript] Entrypoint digitalcommerce/proxy = digitalcommerce/proxy/digitalcommerce/proxy.sdk.js digitalcommerce/proxy/digitalcommerce/proxy.sdk.js.map
+[shellscript] Entrypoint account = account/account.sdk.js account/account.sdk.js.map
+[shellscript] Entrypoint account/proxy = account/proxy/account/proxy.sdk.js account/proxy/account/proxy.sdk.js.map
+[shellscript] Entrypoint productconsole = productconsole/productconsole.sdk.js productconsole/productconsole.sdk.js.map
+[shellscript] Entrypoint translation = translation/translation.sdk.js translation/translation.sdk.js.map
+[shellscript] Entrypoint translation/proxy = translation/proxy/translation/proxy.sdk.js translation/proxy/translation/proxy.sdk.js.map
+[shellscript] Entrypoint pubsub = pubsub/pubsub.sdk.js pubsub/pubsub.sdk.js.map
+[shellscript] Entrypoint b2bexpress = b2bexpress/b2bexpress.sdk.js b2bexpress/b2bexpress.sdk.js.map
+[shellscript]  [92] ./src/sdk/datasource/datasource.sdk.ts 19.4 KiB {0} {2} {3} {4} {5} {6} [built]
+[shellscript] [111] ./src/sdk/events/pubsub.sdk.ts 2.86 KiB {5} {6} {7} {8} [built]
+[shellscript] [176] ./src/sdk/datasource/index.sdk.ts 174 bytes {4} [built]
+[shellscript] [177] ./src/sdk/cpq/index.sdk.ts 153 bytes {3} [built]
+[shellscript] [178] ./src/sdk/cpq/cpq.sdk.ts 54.8 KiB {3} [built]
+[shellscript] [201] ./src/sdk/digitalcommerce/index.sdk.ts 189 bytes {5} [built]
+[shellscript] [202] ./src/sdk/digitalcommerce/digitalcommerce.sdk.ts 85.3 KiB {5} [built]
+[shellscript] [216] ./src/sdk/digitalcommerce/index.sdk.proxy.ts 207 bytes {6} [built]
+[shellscript] [218] ./src/sdk/account/index.sdk.ts 165 bytes {0} [built]
+[shellscript] [226] ./src/sdk/account/index.sdk.proxy.ts 183 bytes {1} [built]
+[shellscript] [228] ./src/sdk/productconsole/index.sdk.ts 186 bytes {7} [built]
+[shellscript] [327] ./src/sdk/translation/index.sdk.ts 177 bytes {9} [built]
+[shellscript] [330] ./src/sdk/translation/index.sdk.proxy.ts 195 bytes {10} [built]
+[shellscript] [332] ./src/sdk/events/index.sdk.ts 162 bytes {8} [built]
+[shellscript] [333] ./src/sdk/b2bexpress/index.sdk.ts 174 bytes {2} [built]
+[shellscript]     + 334 hidden modules
+[shellscript] Moving compiled sdk into staticresources-expanded
+[shellscript] Packaging all sfdc files to deploy
+[shellscript] Packaging all compiled staticresources to deploy
+[shellscript] Packaging all LWC JS to deploy
+[shellscript] Packaging all LWC HTML to deploy
+[shellscript] Packaging all LWC CSS to deploy
+[shellscript] Packaging all LWC SVG to deploy
+[shellscript] Packaging all LWC SVG to deploy
+[shellscript] Packaging all compiled lwc dirs to deploy
+[shellscript] Packaging backcompat watch group to deploy
+[shellscript] Packaging files to deploy
+[shellscript] Making package.xml
+[shellscript] Writing Zip Index!!!
+[shellscript] Output 16 to file: vlocity-temp/to-zip.txt
+[shellscript] No layouts folder. Skipping
+[shellscript] No profiles folder. Skipping
+[shellscript] No homePageLayouts folder. Skipping
+[shellscript] Creating pre-deployment zip
+[shellscript] Deploying: node_modules/yarn.pkg.done vlocity-temp/via_sdk.zip
+[shellscript] 3980	vlocity-temp/via_sdk.zip
+[shellscript] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
+[shellscript]
+[shellscript] -------------------------------------------
+[shellscript] Make::Errors
+[shellscript] -------------------------------------------
+[shellscript] Error in: /Users/nnigam/vlocity/vloc_release/../via_sdk
+[shellscript] See above for more details
+[shellscript]
+[shellscript] real	0m8.748s
+[shellscript] user	0m0.353s
+[shellscript] sys	0m0.109s
+[shellscript] make: *** [/Users/nnigam/vlocity/vloc_release/make/common.mk:61: vlocity-temp/deploy] Error 1
+     [echo] Unhiding Undeployable Subdirectories under ../via_sdk:
+
+BUILD FAILED
+/Users/nnigam/vlocity/vloc_release/build.xml:1532: The following error occurred while executing this line:
+/Users/nnigam/vlocity/vloc_release/build.xml:2056: The following error occurred while executing this line:
+/Users/nnigam/vlocity/vloc_release/build.xml:2998: The following error occurred while executing this line:
+/Users/nnigam/vlocity/vloc_release/build.xml:3005: The following error occurred while executing this line:
+/Users/nnigam/vlocity/vloc_release/build.xml:2813: /Users/nnigam/vlocity/vloc_release/build.xml:2846: shellscript returned: 2
